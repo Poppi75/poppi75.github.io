@@ -1,0 +1,81 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;  /* Dark gray background */
+    color: white;
+}
+
+h1 {
+    color: #f1f1f1;  /* Light color for headings */
+    position: relative;
+    
+}
+
+p {
+    color: #f1f1f1;
+    position: relative;
+    text-align: start;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #292929;  /* Slightly darker background for the navbar */
+    padding: 1vw;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1vw;
+    position: relative;
+    /* right: 38vw; */
+}
+
+nav ul li a {
+    transition-duration: 0.4s;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav ul li a:hover {
+    color: #ff00d4;  
+}
+
+/* nav ul li a: {
+    color: #d2d2d2;  
+} */
+
+/* Section Styles */
+section {
+    padding: 5vh;
+    margin-left: 1vw;
+    margin-top: 2vh;
+    margin-right: 1vw;
+    background-color: #444;  /* Slightly lighter background for sections */
+    border-radius: 0.8vw;
+}
+
+/* Footer */
+footer {
+    background-color: #292929;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 1.8vh;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+p1 {
+    color: #f1f1f1;
+}
