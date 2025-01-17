@@ -12,6 +12,10 @@ h1 {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
 #about a {
     color: #f1f1f1;
     position: fixed;
@@ -43,7 +47,7 @@ nav ul li {
 
 nav ul li a {
     transition-duration: 0.4s;
-    color: #f1f1f1;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
