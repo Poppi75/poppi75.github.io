@@ -5,6 +5,8 @@ body {
     padding: 0;
     background-color: #333;  /* Dark gray background */
     color: #f1f1f1;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 h1 {
@@ -18,7 +20,6 @@ a {
 
 #about a {
     color: #f1f1f1;
-    position: fixed;
     text-align: start;
     font-weight: bold;
     margin-left: 1vw;
@@ -27,9 +28,14 @@ a {
 
 /* Navigation Bar */
 nav {
-    background-color: #292929;  /* Slightly darker background for the navbar */
+    background-color: #292929;
     padding: 1vw;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 nav ul {
@@ -46,15 +52,25 @@ nav ul li {
 }
 
 nav ul li a {
-    transition-duration: 0.4s;
-    color: #ffffff;
+    transition: 
+        color 0.3s cubic-bezier(.4,2,.3,1),
+        transform 0.2s cubic-bezier(.4,2,.3,1),
+        text-shadow 0.2s cubic-bezier(.4,2,.3,1);
+    color: #f1f1f1;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+    display: inline-block;
+    padding: 0.7em 1.2em;      /* More vertical padding */
+    border-radius: 0.4em;
+    position: relative;        /* Keep in flow */
+    transform-origin: center;  /* Scale from center */
 }
 
 nav ul li a:hover {
-    color: #ff00d4;  
+    color: #ff00d4;
+    transform: scale(1.07);    /* Remove translateY, just scale */
+    text-shadow: 0 0 12px #ff00d4, 0 0 24px #ff00d4;
 }
 
 /* nav ul li a: {
@@ -63,18 +79,59 @@ nav ul li a:hover {
 
 /* Section Styles */
 section {
-    padding: 5vh;
+    padding: 8vh 2vw;
     margin-left: 1vw;
-    margin-top: 2vh;
+    margin-top: 4vh;
     margin-right: 1vw;
-    background-color: #444;  /* Slightly lighter background for sections */
+    background: rgba(68, 68, 68, 0.5); /* semi-transparent */
     border-radius: 0.8vw;
+    border: 1.5px solid rgba(255,255,255,0.25); /* light border */
+    box-shadow: none;
+    backdrop-filter: blur(8px); /* glass blur effect */
+    -webkit-backdrop-filter: blur(8px);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 0 32px 0 #ff00d4;
 }
 
 img {
     padding-top: 5vh;
     width: 3vw;
     height: auto;
+}
+
+/* About Section Styles */
+section#about {
+    text-align: center;
+}
+
+section#about h1 {
+    margin-bottom: 3vh;
+}
+
+section#about a {
+    display: inline-block;
+    margin: 0 1vw;
+    vertical-align: middle;
+}
+
+section#about img {
+    padding-top: 0;
+    width: 3vw;
+    height: auto;
+}
+
+section#about a img {
+    transition: 
+        transform 0.2s cubic-bezier(.4,2,.3,1),
+        box-shadow 0.2s cubic-bezier(.4,2,.3,1);
+}
+
+section#about a img:hover {
+    transform: scale(1.07);
+    box-shadow: none;
 }
 
 /* Footer */
