@@ -73,10 +73,6 @@ nav ul li a:hover {
     text-shadow: 0 0 12px #ff00d4, 0 0 24px #ff00d4;
 }
 
-/* nav ul li a: {
-    color: #d2d2d2;  
-} */
-
 /* Section Styles */
 section {
     padding: 8vh 2vw;
@@ -130,7 +126,7 @@ section#about a img {
 }
 
 section#about a img:hover {
-    transform: scale(1.07);
+    transform: scale(1.2);
     box-shadow: none;
 }
 
