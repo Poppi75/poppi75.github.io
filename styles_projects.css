@@ -127,6 +127,31 @@ p1 {
     transform: scale(1.07);
 }
 
+.download-btn1 {
+    pointer-events: none;
+    display: inline-block;
+    padding: 0.7em 2em;
+    background: #ff00d4;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    cursor: not-allowed;
+    transition: 
+        background 0.3s cubic-bezier(.4,2,.3,1),
+        transform 0.2s cubic-bezier(.4,2,.3,1),
+        box-shadow 0.2s cubic-bezier(.4,2,.3,1);
+    text-decoration: line-through;
+    margin-top: 2vh;
+}
+
+.download-btn1:hover {
+    background: #fff;
+    color: #ff00d4;
+    transform: scale(1.07);
+}
+
 #project1-images {
     display: flex;
     flex-direction: row;
