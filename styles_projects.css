@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #292929;  /* Dark gray background */
     color: white;
-    padding-top: 100px;
+    padding-top: 0;
     padding-bottom: 80px;
 }
 
@@ -186,9 +186,9 @@ p1 {
 }
 
 .about-section {
-    padding: 8vh 2vw;    /* More space for easier scrolling */
+    padding: 25vh 2vw;    /* More space for easier scrolling */
     background: rgba(17, 17, 17, 1); /* semi-transparent */
-    height: 75vh;
+    height: 50vh;
 }
 
 /* Responsive: stack images vertically on small screens */
