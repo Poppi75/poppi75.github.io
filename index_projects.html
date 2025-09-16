@@ -8,22 +8,24 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
+    <nav id="navbar">
         <ul>
             <!-- <li><a href="#home">Home</a></li> -->
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="index_projects.html">PROJECTS</a></li>
-            <li><a href="index_contact_me.html">CONTACT ME</a></li>
+            <li><a id="about-button" href="index.html">ABOUT</a></li>
+            <li><a id="projects-button" href="index_projects.html">PROJECTS</a></li>
+            <li><a id="contactme-button" href="index_contact_me.html">CONTACT ME</a></li>
         </ul>
     </nav>
 
     <!-- Main Content Section -->
-    <section id="about">
+    <section id="about" class="about-section">
         <h1>PROJECTS</h1>
-        <p></p>
+        <p>Here are all my projects that are finished
+            or quit.
+        </p>
     </section>
 
-    <section id="project1">
+    <section id="project1" class="projects">
         <h1>The Secret of Xitrilia</h1>
         <h2>My first ever 2D platformer made in school.</h2>
         <br>
@@ -40,7 +42,7 @@
         <a href="The Secret of Xitrilia.zip" download class="download-btn">DOWNLOAD ZIP</a>
     </section>
 
-    <section id="project1">
+    <section id="project1" class="projects">
         <h1>Hellslayer</h1>
         <h2>A 3D Unity project made in school.</h2>
         <br>
@@ -56,7 +58,7 @@
         <a href="" download class="download-btn1">DOWNLOAD ZIP</a>
     </section>
 
-    <section id="project1">
+    <section id="project1" class="projects">
         <h1>DEFEND.EXE</h1>
         <h2>A 2D pygame made in school in one week.</h2>
         <br>
@@ -76,5 +78,7 @@
     <footer>
         <p1>&copy; 2025 Johannes Kananen. All rights reserved.</p1>
     </footer>
+
+    <script src="navbarAnimation.js"></script>
 </body>
 </html>

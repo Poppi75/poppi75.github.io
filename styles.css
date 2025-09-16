@@ -3,16 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333;  /* Dark gray background */
+    background-color: #292929;  /* Dark gray background */
     color: white;
-    padding-top: 80px;   /* Add space for fixed nav */
+    padding-top: 100px;   /* Add space for fixed nav */
     padding-bottom: 80px; /* Add space for fixed footer */
 }
 
 h1 {
     color: #f1f1f1;  /* Light color for headings */
     position: relative;
-    
+    font-size: 35px;
 }
 
 p {
@@ -24,7 +24,7 @@ p {
 
 /* Navigation Bar */
 nav {
-    background-color: #292929;
+    /*background-color: #292929;*/
     padding: 1vw;
     text-align: center;
     position: fixed;
@@ -69,12 +69,20 @@ nav ul li a:hover {
     text-shadow: 0 0 12px #ff00d4, 0 0 24px #ff00d4;
 }
 
-/* nav ul li a: {
-    color: #d2d2d2;  
-} */
+#about-button::after {
+    content: "";                   /* must have content */
+    position: absolute;            
+    bottom: 3px;                 /* distance below the button */
+    left: 50%;                     
+    transform: translateX(-50%);   /* center under the button */
+    width: 3vw;                    /* box width */
+    height: 1vh;                   /* box height */
+    background-color: #ff00d4;      /* box color */
+    border-radius: 1vb;             /* rounded corners */
+}
 
 /* Section Styles */
-section {
+.section {
     padding: 8vh 2vw;    /* More space for easier scrolling */
     margin-left: 1vw;
     margin-top: 4vh;
@@ -88,13 +96,13 @@ section {
     transition: box-shadow 0.3s ease;
 }
 
-section:hover {
+.section:hover {
     box-shadow: 0 0px 32px 0 #ff00d4;
 }
 
 /* Footer */
 footer {
-    background-color: #292929;
+    background-color: #252525;
     color: #f1f1f1;
     text-align: center;
     padding: 1.8vh;
@@ -107,25 +115,13 @@ p1 {
     color: #f1f1f1;
 }
 
-.about-skills-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 4vh; /* Match margin-top of sections */
+#home {
+    /*stuff*/
 }
 
-.about-section {
-    width: 50%;
-    margin-left: 1vw;
-    margin-right: 0;
-    display: block;
+.home-section {
+    padding: 8vh 2vw;    /* More space for easier scrolling */
+    background: rgba(17, 17, 17, 1); /* semi-transparent */
+    height: 75vh;
 }
 
-#skills {
-    width: 50%;
-    margin-left: 0;
-    margin-right: 1vw;
-    display: block;
-    align-self: flex-start;
-}

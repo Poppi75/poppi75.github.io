@@ -8,23 +8,21 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
+    <nav id="navbar">
         <ul>
-            <!-- <li><a href="#home">Home</a></li> -->
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="index_projects.html">PROJECTS</a></li>
-            <li><a href="index_contact_me.html">CONTACT ME</a></li>
+            <li><a id="about-button" href="index.html">ABOUT</a></li>
+            <li><a id="projects-button" href="index_projects.html">PROJECTS</a></li>
+            <li><a id="contactme-button" href="index_contact_me.html">CONTACT ME</a></li>
         </ul>
     </nav>
 
     <!-- Main Content Section -->
-     <section id="home">
+    <section id="home" class="home-section">
         <h1>JOHANNES KANANEN - GAME DEVELOPER PORTFOLIO</h1>
         <p>Everything may not be up to date.</p>
     </section>
 
-    <div class="about-skills-container">
-    <section id="about" class="about-section">
+    <section id="about" class="section">
         <h1>ABOUT ME</h1>
         <p>Hello! My name is Johannes, but people call me Poppi. 
             I'm a 17 year old game, web and software developer from Finland. 
@@ -48,7 +46,7 @@
            Case: Endorfy ARX 700 ARGB</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>SKILLS</h1>
         <p>
             Engines (Unity, Godot, Unreal Engine)<br>
@@ -66,9 +64,8 @@
             I'm currently learning C++ through my school team's Unreal VR project.
         </p>
     </section>
-    </div>
 
-    <section id="current_projects">
+    <section id="current_projects" class="section">
         <h1>CURRENTLY DEVELOPING</h1>
         <br>
         <h2>*Name sencored* in Godot (Rogue, freetime project)</h2>
@@ -79,5 +76,7 @@
     <footer>
         <p1>&copy; 2025 Johannes Kananen. All rights reserved.</p1>
     </footer>
+
+    <script src="navbarAnimation.js"></script>
 </body>
 </html>

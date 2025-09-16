@@ -3,16 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333;  /* Dark gray background */
+    background-color: #292929;  /* Dark gray background */
     color: white;
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 80px;
 }
 
 h1 {
     color: #f1f1f1;  /* Light color for headings */
     position: relative;
-    
+    font-size: 35px;
 }
 
 p {
@@ -23,7 +23,6 @@ p {
 
 /* Navigation Bar */
 nav {
-    background-color: #292929;  /* Slightly darker background for the navbar */
     padding: 1vw;
     text-align: center;
     position: fixed;
@@ -68,8 +67,20 @@ nav ul li a:hover {
     text-shadow: 0 0 12px #ff00d4, 0 0 24px #ff00d4;
 }
 
+#projects-button::after {
+    content: "";                   /* must have content */
+    position: absolute;            
+    bottom: 3px;                 /* distance below the button */
+    left: 50%;                     
+    transform: translateX(-50%);   /* center under the button */
+    width: 3vw;                    /* box width */
+    height: 1vh;                   /* box height */
+    background-color: #ff00d4;      /* box color */
+    border-radius: 1vb;             /* rounded corners */
+}
+
 /* Section Styles */
-section {
+.projects {
     padding: 8vh 2vw;
     margin-left: 1vw;
     margin-top: 4vh;
@@ -83,13 +94,13 @@ section {
     transition: box-shadow 0.3s ease;
 }
 
-section:hover {
+.projects:hover {
     box-shadow: 0 0px 32px 0 #ff00d4;
 }
 
 /* Footer */
 footer {
-    background-color: #292929;
+    background-color: #252525;
     color: #f1f1f1;
     text-align: center;
     padding: 1.8vh;
@@ -174,6 +185,11 @@ p1 {
     transform: scale(1.3); /* Slightly enlarge the image */
 }
 
+.about-section {
+    padding: 8vh 2vw;    /* More space for easier scrolling */
+    background: rgba(17, 17, 17, 1); /* semi-transparent */
+    height: 75vh;
+}
 
 /* Responsive: stack images vertically on small screens */
 @media (max-width: 700px) {
