@@ -61,3 +61,24 @@
     grid-template-columns: 1fr 140px;
   }
 }
+
+/* Golden Glitter Particles with Gravity */
+@keyframes particlesFall {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  
+  10% {
+    opacity: 1;
+  }
+  
+  90% {
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+}
