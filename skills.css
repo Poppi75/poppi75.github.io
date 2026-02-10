@@ -1,0 +1,88 @@
+/* Skills Page - minimal layout using existing theme */
+.skills-main {
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 140px 2rem 4rem;
+}
+
+.skills-page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.skills-page-title .highlight {
+  color: var(--accent);
+}
+
+.tools-section {
+  margin-top: 2.25rem;
+}
+
+.tools-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.tool-card {
+  background: var(--bg-navbar);
+  border-radius: 12px;
+  padding: 1.1rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.tool-image {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  display: block;
+}
+
+.skill-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.skill-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: var(--button-hover);
+}
+
+.skill-dot.is-filled {
+  background: var(--accent);
+}
+
+.tool-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  opacity: 0.95;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .tools-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .tools-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}

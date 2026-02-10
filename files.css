@@ -1,0 +1,63 @@
+/* Files Page - minimal layout using existing theme */
+.files-main {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 140px 2rem 4rem;
+}
+
+.files-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.75rem;
+}
+
+.files-title .highlight {
+  color: var(--accent);
+}
+
+.files-table {
+  width: 100%;
+  border: 2px solid rgba(232, 236, 243, 0.75);
+}
+
+.files-row {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
+
+.files-row + .files-row {
+  border-top: 2px solid rgba(232, 236, 243, 0.75);
+}
+
+.files-cell {
+  padding: 0.55rem 0.85rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.files-cell--right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid rgba(232, 236, 243, 0.75);
+}
+
+.files-download {
+  color: var(--text-primary);
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.files-download:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 520px) {
+  .files-row {
+    grid-template-columns: 1fr 140px;
+  }
+}
